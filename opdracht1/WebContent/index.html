@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Fase 1 contactformulier</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,9 +19,47 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <h1>Hello, world!</h1>
-
+  <body id="bodygj">
+    
+<div class="container">
+	<h2 id="titeltekst">Uw externe team voor app design</h2>
+	
+	<form class="form-horizontal">
+	
+		<div class="form-group">
+		<h4>Vertel ons welk resultaat u zoekt.</h4>
+			<label for="inputNaambedrijf" class="control-label col-xs-3">Naam Bedrijf</label>
+			<div class="col-xs-5">
+				<input type="email" class="form-control input-large" id="inputNaambedrijf" placeholder="Uw bedrijfsnaam">
+			</div>
+			<div class="col-xs-3"></div>
+		</div>
+	    <div class="form-group">
+        	<label for="inputContactpersoon" class="control-label col-xs-3">Contactpersoon</label>
+        	<div class="col-xs-5">
+            	<input type="text" class="form-control input-large" id="inputContactpersoon" placeholder="uw naam">
+        	</div>
+    	</div>
+		<div class="form-group">
+			<label for="inputEmail" class="control-label col-xs-3">E-mail</label>
+			<div class="col-xs-5">
+				<input type="text" class="form-control input-large" id="inputEmail" placeholder="Email">
+			</div>
+        </div>
+        <div class="form-group">
+			<label for="inputBericht" class="control-label col-xs-3">Uw Bericht</label>
+			<div class="col-xs-5">
+				<textarea class="form-control input-large" rows="5" id="inputBericht"></textarea>
+			</div>
+        </div>
+    <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-8">
+            <button type="submit" class="btn btn-primary">Versturen</button>
+        </div>
+    </div>
+		
+	</form>
+</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
